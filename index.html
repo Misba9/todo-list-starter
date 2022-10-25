@@ -1,24 +1,29 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>codedamn HTML Playground</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/style.css" />
+		<title>To Do App</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<script src="./app.js"></script>
 	</head>
 	<body>
-		<h1>Welcome to codedamn</h1>
-		<p>Hey there! This is a HTML/CSS/JS playground!</p>
-		<ul>
-			<li>You can edit these files....!</li>
-			<li>You can play with CSS/JS files</li>
-			<li>You can create files and folders here</li>
-			<li>Feel free to use it as your local development environment</li>
-			<li>hello world</li>
-		</ul>
-
-		<div id="time">Time right now: <span></span></div>
-		<script src="https://bit.ly/codedamn-web-console"></script>
-		<script src="/script.js"></script>
+		<div id="myDIV" class="container">
+		<div class="header">
+			<input type="text" id="myInput" placeholder="Title..." />
+			<span onclick="newElement()" class="addBtn">Add</span>
+			<h1>My To Do List</h1>
+		</div>
+			<ul id="myUL">
+				<li>Hit the gym</li>
+				<li class="checked">Pay bills</li>
+				<li>Meet George</li>
+				<li>Buy eggs</li>
+				<li>Read a book</li>
+				<li>Organize office</li>
+			</ul>
+		</div>
+		<script src="./app.js"></script>
 	</body>
 </html>
